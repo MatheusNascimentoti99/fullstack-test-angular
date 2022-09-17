@@ -13,4 +13,7 @@ describe('ApiService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+  it('send form', () => {
+    expect(service.submitForm({ description: 'test' })).toBeTruthy();
+  })
 });
